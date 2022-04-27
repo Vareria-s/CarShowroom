@@ -1,0 +1,320 @@
+.app-wrapper {
+    position: relative;
+    width: 1600px;
+    font-weight: 400;
+}
+li {
+    list-style-type: none;
+}
+
+/*order form call*/
+.order-form-call {
+    width: 740px;
+    position: absolute;
+    right: 0;
+    background: white;
+    padding: 100px 0 0 60px;
+    z-index: 2;
+}
+.order-form-call .header-form-order-call {
+    color: #2C2C2C;
+    font-size: 38px;
+}
+.order-form-call form {
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.order-form-call input,textarea {
+    border: 1px solid;
+    font-size: 16px;
+    width: 618px;
+    padding: 29px;
+    border-radius: 7px;
+    margin: 20px 0;
+    outline:none;
+}
+.order-form-call label{
+    position: absolute;
+    top: 48px;
+    left: 32px;
+    font-size: 16px;
+    color: #2C2C2C;
+}
+
+
+.placeholder:nth-child(2){
+    position:absolute;
+    font-size: 16px;
+    left:31px;
+    top:59px;
+    transform:translateY(-50%);
+    pointer-events:none;
+}
+.placeholder:nth-child(4){
+    position:absolute;
+    font-size: 16px;
+    left:31px;
+    top:179px;
+    transform:translateY(-50%);
+    pointer-events:none;
+}
+.red {
+    color:red;
+}
+.form-control-one:focus ~ .placeholder:nth-child(2),
+.form-control-one:valid ~ .placeholder:nth-child(2) {
+    display:none;
+}
+.form-control-two:focus ~ .placeholder:nth-child(4),
+.form-control-two:valid ~ .placeholder:nth-child(4) {
+    display:none;
+}
+.order-form-call textarea {
+    resize: none;
+}
+.order-form-call textarea::placeholder {
+    font-size: 16px;
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+.order-form-call .submit-form {
+    display: flex;
+    margin-top: 40px;
+}
+.order-form-call .submit-form .data-processing{
+    width: 350px;
+    font-size: 14px;
+    color: #989898;
+    margin: auto 0;
+}
+.order-form-call .submit-form .data-processing span{
+    color: #2C2C2C;
+}
+.order-form-call .submit-form button {
+    border:none;
+    margin: 0 0 20px 20px;
+    padding: 30px 0 30px 0;
+    background: #FEC110;
+    width: 310px;
+    font-size: 16px;
+    border-radius: 7px;
+}
+.order-form-call .submit-form button img{
+    margin-left: 18px;
+    height: 9px;
+    width: 6px;
+    background-size: cover;
+}
+    /*first application menu*/
+
+.body-first-menu {
+    background: white;
+    display: flex;
+    height: 70px;
+}
+.logo {
+    display: flex;
+    margin: 10px 0 10px 130px;
+    height: 50px;
+}
+.logo-picture {
+    background: url("./img/favicon.png");
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+}
+.title {
+    background: url("./img/vector.png");
+    height: 20px;
+    width: 104px;
+    background-size: cover;
+    margin: auto 0 auto 10px;
+}
+.menu-blocks .nav {
+    margin: 0 0 0 309px;
+    display: flex;
+    font-size: 15px;
+}
+.menu-blocks .nav li {
+    margin: 26px 20px;
+}
+.menu-blocks .nav .item-active {
+    display: flex;
+}
+.menu-blocks .nav .item-active .arrow {
+    background: url("./img/arrow.png");
+    height: 6px;
+    width: 9px;
+    background-size: cover;
+    margin: auto 0 auto 10px;
+    transition-duration: .25s;
+    transform: rotate(0deg);
+}
+.menu-blocks .nav .item-active:hover .arrow {
+    transition-duration: .25s;
+    transform: rotate(180deg);
+}
+/*burger-menu-icon*/
+.burger-menu-icon {
+    width: 30px;
+    height: 12px;
+    padding: 29px 23px;
+    margin-left: 14px;
+    border-left: 1px double #EEECEC;
+}
+#menu__toggle {
+    opacity: 0;
+    margin: 12px;
+    width: 25px;
+    height: 25px;
+    z-index: 120;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+    width: 100%;
+    top: 0;
+    transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+    width: 100%;
+    top: 0;
+    transform: rotate(90deg);
+}
+.menu__btn {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -47px;
+    width: 20px;
+    height: 12px;
+    cursor: pointer;
+    z-index: 1;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 123%;
+    height: 2px;
+    background-color: black;
+    transition-duration: .25s;
+}
+.menu__btn > span::before {
+    content: '';
+    top: -6px;
+}
+.menu__btn > span::after {
+    content: '';
+    top: 6px;
+}
+.sign-up-for-service-icon {
+    background: #FEC110;
+    border-radius: 7px;
+    margin: 15px 0;
+    padding: 12px 20px;
+}
+.record-button-text {
+    font-size: 13px;
+    margin: auto;
+}
+
+
+
+
+/*second application menu*/
+.second-menu {
+    padding: 40px 0 40px 0;
+    display: flex;
+    border-top: 1px double #FEC110;
+}
+.first-block {
+    margin-left: 130px;
+}
+.contact-information {
+    width: 680px;
+}
+.contact-information .telephone {
+    font-size: 38px;
+    color: #FEC110;
+}
+.contact-information .e-mail {
+    font-size: 21px;
+    color: #2C2C2C;
+    text-decoration: underline;
+    margin-top: 20px;
+}
+.contact-information .opening-hours {
+    font-size: 16px;
+    color: #989898;
+    margin-top: 20px;
+}
+.addresses {
+    margin-top: 149px;
+}
+.addresses .body-addresses:nth-child(1){
+    margin: 0;
+}
+.addresses .body-addresses{
+    margin-top: 10px;
+}
+.addresses .body-addresses .header-addresses{
+    font-size: 14px;
+    color: #2C2C2C;
+    font-weight: 700;
+}
+.addresses .body-addresses .text-addresses{
+    font-size: 12px;
+    color: #989898;
+}
+.social-media {
+    margin-top: 40px;
+}
+.social-media a{
+    margin-right: 10px;
+}
+.second-block {
+    margin-left: 10px;
+    width: 428px;
+}
+.auto-centers .header-auto-centers {
+    font-size: 21px;
+    color: #989898;
+    padding-bottom: 20px;
+    border-bottom: 1px double #B6B6B6;
+}
+.auto-centers ul{
+    padding: 15px 0 17px 0;
+    margin: 0;
+    color: #2C2C2C;
+    font-size: 15px;
+    border-bottom: 1px double #B6B6B6;
+}
+.list-auto-centers .item{
+    font-size: 15px;
+    color: #2C2C2C;
+    margin: 5px;
+}
+.personal-area {
+    margin-top: 20px;
+    font-size: 21px;
+    color: #2C2C2C;
+}
+.personal-area img{
+    margin-left: 249px;
+}
+.confidentiality {
+    margin-top: 220px;
+    font-size: 15px;
+    color: #2C2C2C;
+}
+@media only screen and (min-width: 1600px) {
+    .app-wrapper {
+       max-width: 1600px;
+        margin: auto;
+    }
+}
