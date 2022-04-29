@@ -1,13 +1,17 @@
-import './../../App.css';
-import vk from "./../../img/vk.png"
-import instagram from "./../../img/instagram.png"
-import twitter from "./../../img/twitter.png"
-import youtube from "./../../img/youtube.png"
-import personal from "./../../img/personal-area.png"
+import '../../../style/Menu.css';
+import vk from "../../../img/vk.png"
+import instagram from "../../../img/instagram.png"
+import twitter from "../../../img/twitter.png"
+import youtube from "../../../img/youtube.png"
+import personal from "../../../img/personal-area.png"
+import {useContext} from "react";
+import {MyContext} from "../../../App";
 
-function App() {
+function SecondMenu() {
+    const {state} = useContext(MyContext);
+
     return (
-        <div className="second-menu">
+        <div className={state.burgerMenuWork ? "closed-second-menu" : "second-menu"}>
             <div className="first-block">
                 <div className="contact-information">
                     <div className="telephone">+7 (999) 123-45-67</div>
@@ -52,4 +56,4 @@ function App() {
     );
 }
 
-export default App;
+export default SecondMenu;

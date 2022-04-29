@@ -1,6 +1,10 @@
-import './../../App.css';
+import '../../../style/Menu.css';
+import {useContext} from "react";
+import {MyContext} from "../../../App";
 
 function FirstMenu() {
+    const {state, dispatch} = useContext(MyContext);
+
     return (
             <div className="body-first-menu">
                 <div className="logo">
@@ -15,8 +19,13 @@ function FirstMenu() {
                     <ul className="nav">
                         <li className="item-active">Услуги
                             <div className="arrow">
-
                             </div>
+                            <ul className="dropdown-menu">
+                                <li >Ремонт автомобиля</li>
+                                <li>Плановое ТО</li>
+                                <li>Диагностика и ремонт</li>
+                                <li>Чип тюнинг</li>
+                            </ul>
                         </li>
                         <li className="item">О компании</li>
                         <li className="item">Гарантии</li>
@@ -26,15 +35,15 @@ function FirstMenu() {
                     </ul>
                 </div>
                 <div className="burger-menu-icon">
-                    <input id="menu__toggle" type="checkbox" />
+                    <input id="menu__toggle" type="checkbox" defaultChecked={state.burgerMenuWork} onClick={()=>dispatch({type: 'BURGER_MENU_WORK',})}/>
                     <label className="menu__btn" htmlFor="menu__toggle">
-                                        <span>
-                                        </span>
+                        <span>
+                        </span>
                     </label>
                 </div>
-                <div className="sign-up-for-service-icon">
-                    <div className="record-button-text">Запись на сервис</div>
-                </div>
+                <span className="sign-up-for-service-icon" onClick={()=>dispatch({type: 'FORM_CALL',})}>
+                    <div className="record-button-text" >Запись на сервис</div>
+                </span>
             </div>
     );
 }

@@ -1,0 +1,16 @@
+.app-wrapper {
+    position: relative;
+    width: 1600px;
+    font-weight: 400;
+}
+li {
+    list-style-type: none;
+}
+
+
+@media only screen and (min-width: 1600px) {
+    .app-wrapper {
+       max-width: 1600px;
+        margin: auto;
+    }
+}
