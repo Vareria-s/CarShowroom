@@ -12,13 +12,13 @@
     height: 50px;
 }
 .logo-picture {
-    background: url("../img/favicon.png");
+    background: url("../img/logo/favicon.png");
     height: 50px;
     width: 50px;
     background-size: cover;
 }
 .title {
-    background: url("../img/vector.png");
+    background: url("../img/logo/vector.png");
     height: 20px;
     width: 104px;
     background-size: cover;
@@ -38,7 +38,7 @@
     padding: 26px 20px;
 }
 .menu-blocks .nav .item-active .arrow {
-    background: url("../img/arrow.png");
+    background: url("../img/vector/arrow.png");
     height: 6px;
     width: 9px;
     background-size: cover;

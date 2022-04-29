@@ -1,5 +1,7 @@
 import '../../../style/Content.css';
-import information from "./../../../img/vector-information.png"
+import information from "../../../img/vector/vector-information.png"
+import back from "../../../img/vector/back-button.png"
+import forward from "../../../img/vector/forward-button.png"
 
 function Introduction() {
 
@@ -25,14 +27,14 @@ function Introduction() {
                 <div className="img-entry-carousel">
                     <div className="button-entry-carousel">
                         <div className="back-button-entry-carousel">
-
+                            <img src={back} alt=""/>
                         </div>
                         <div className="forward-button-entry-carousel">
-
+                            <img src={forward} alt=""/>
                         </div>
                     </div>
                     <div className="image-pagination-entry-carousel">
-
+                        1/3
                     </div>
                 </div>
             </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import "../../../style/Form.css"
-import ButtonVector from "../../../img/button-vector.png";
+import ButtonVector from "../../../img/vector/button-vector.png";
 
 export default class SubmissionForm extends React.Component{
     state = {

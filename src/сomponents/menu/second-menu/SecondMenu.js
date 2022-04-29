@@ -1,9 +1,9 @@
 import '../../../style/Menu.css';
-import vk from "../../../img/vk.png"
-import instagram from "../../../img/instagram.png"
-import twitter from "../../../img/twitter.png"
-import youtube from "../../../img/youtube.png"
-import personal from "../../../img/personal-area.png"
+import vk from "../../../img/vector/vk.png"
+import instagram from "../../../img/vector/instagram.png"
+import twitter from "../../../img/vector/twitter.png"
+import youtube from "../../../img/vector/youtube.png"
+import personal from "../../../img/vector/personal-area.png"
 import {useContext} from "react";
 import {MyContext} from "../../../App";
 

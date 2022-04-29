@@ -1,22 +1,33 @@
 /*content * introduction*/
 
+.introduction {
+    display: flex;
+}
 .entry-information {
-    padding-bottom: 60px;
+    padding-right: 40px;
     width: 820px;
     background: #313232;
 }
 .header-entry-information {
+    width: 650px;
+    letter-spacing: -0.03em;
+    line-height: 95%;
     color: #FFFFFF;
     font-size: 67px;
     padding-top: 80px;
     margin: 0 0 0 130px;
 }
 .phone-entry-information {
+    line-height: 95%;
+    /* identical to box height, or 64px */
+
+    letter-spacing: -0.03em;
     color: #FEC110;
     font-size: 67px;
     margin: 40px 0 50px 130px;
 }
 .address-entry-information {
+    line-height: 140%;
     margin: 10px 0 0 130px;
     font-size: 16px;
 }
@@ -37,6 +48,7 @@
     background: #FEC110;
 }
 .button-information p{
+    line-height: 125%;
     margin: 0;
     font-size: 16px;
     color: #2C2C2C;
@@ -44,4 +56,143 @@
 }
 .button-information img{
     margin: auto 0 auto 15px;
+}
+.entry-carousel {
+    width: 100%;
+}
+.img-entry-carousel {
+    display: flex;
+    background: url("./../img/Image.png") rgba(0, 0, 0, 0.2);
+    width: 780px;
+    height: 650px;
+}
+.button-entry-carousel{
+    padding: 531px 0 59px 40px;
+    display: flex;
+}
+.button-entry-carousel img{
+    width: 14px;
+    height: 12px;
+    margin: 24px 23px;
+}
+.back-button-entry-carousel {
+    background: #FEC110;
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+}
+.forward-button-entry-carousel {
+    margin-left: 5px;
+    background: #FEC110;
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+}
+.image-pagination-entry-carousel {
+    font-size: 38px;
+    line-height: 110%;
+    letter-spacing: -0.015em;
+    color: #FFFFFF;
+    margin: 540px 130px 68px 432px;
+}
+
+/*content * acquaintance*/
+
+.acquaintance {
+    background: #E4E4E4;
+    padding: 180px 130px 180px 130px;
+}
+.block-acquaintance {
+    display: flex;
+    border-top: 1px solid #B6B6B6;
+}
+.one-body-block-acquaintance {
+    width: 650px;
+}
+.one-body-block-acquaintance p{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 200%;
+    color: #2C2C2C;
+    letter-spacing: 0.02em;
+}
+.one-body-block-acquaintance h2{
+    margin-top: 60px;
+    font-weight: 400;
+    font-size: 90px;
+    line-height: 90%;
+    letter-spacing: -0.04em;
+    color: #FEC110;
+}
+.two-body-block-acquaintance {
+    margin: 94px 0 0 40px;
+    width: 650px;
+}
+.two-body-block-acquaintance p{
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: #2C2C2C;
+}
+
+/*content * services*/
+
+.services {
+    background: #E4E4E4;
+    padding: 0 90px 140px 130px;
+}
+.header-services {
+    margin-bottom: 60px;
+    font-size: 67px;
+    line-height: 95%;
+    letter-spacing: -0.03em;
+    color: #2C2C2C;
+}
+.body-card-services {
+    flex-wrap: wrap;
+    display: flex;
+}
+.card-services {
+    background: #FFFFFF;
+    width: 650px;
+    height: 490px;
+    margin: 0 40px 40px 0;
+}
+.img-card-services {
+}
+.footer-card-services {
+    justify-content: space-between;
+    display: flex;
+    width: 570px;
+    background: #FFFFFF;
+    padding: 40px;
+}
+.text-card-services {
+    flex-direction: column;
+    display: flex;
+    align-items: baseline;
+}
+.text-card-services h3{
+    font-size: 21px;
+    line-height: 120%;
+    letter-spacing: -0.01em;
+    color: #2C2C2C;
+}
+.text-card-services p {
+    font-size: 21px;
+    line-height: 120%;
+    text-align: right;
+    letter-spacing: -0.01em;
+    color: #989898;
+}
+.button-card-services {
+    background: #FEC110;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+}
+.button-card-services img{
+    margin: 14px 16px 14px 18px;
 }
