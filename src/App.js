@@ -5,6 +5,7 @@ import Content from "./сomponents/content/Content";
 import {BrowserRouter} from "react-router-dom";
 import PersonList from "./сomponents/form-call/PersonList";
 import {createContext, useReducer} from "react";
+import Footer from "./сomponents/footer/Footer";
 
 export const MyContext= createContext();
 
@@ -45,9 +46,7 @@ function App() {
                         <SecondMenu/>
                     </div>
                     <Content/>
-                    <div className="footer">
-                        тут все и сразу разбей на блоки
-                    </div>
+                    <Footer/>
                 </div>
             </BrowserRouter>
         </MyContext.Provider>

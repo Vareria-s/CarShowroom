@@ -5,7 +5,10 @@ import Services from "./services/Services";
 import Comfort from "./comfort/Comfort";
 import Partners from "./partners/Partners";
 import Stock from "./stock/Stock";
-
+import Reviews from "./reviews/Reviews";
+import AddressMap from "./address-map/AddressMap";
+import Application from "./application/Application";
+import MobileApp from "./mobile-app/MobileApp";
 
 function Content() {
 
@@ -18,9 +21,10 @@ function Content() {
             <Comfort/>
             <Partners/>
             <Stock/>
-            {/*<div className="1">отзывы</div>*/}
-            {/*<div className="1">карта</div>*/}
-            {/*<div className="1">контакт (заявка + приложение)</div>*/}
+            <Reviews/>
+            <AddressMap/>
+            <Application/>
+            <MobileApp/>
         </div>
     );
 }
