@@ -23,11 +23,11 @@ function SecondMenu() {
                 <div className="addresses">
                     <div className="body-addresses">
                         <div className="header-addresses">Адрес автоцентра: </div>
-                        <div className="text-addresses">Екатеринбург, ул. Московский тракт 7 км, 2<br></br>+7 (999) 123-45-67</div>
+                        <div className="text-addresses">Екатеринбург, ул. Московский тракт 7 км, 2<br/>+7 (999) 123-45-67</div>
                     </div>
                     <div className="body-addresses">
                         <div className="header-addresses">Центр кузовного ремонта:</div>
-                        <div className="text-addresses">Екатеринбург, ул. Московский тракт 7 км, 2<br></br>+7 (999) 123-45-67</div>
+                        <div className="text-addresses">Екатеринбург, ул. Московский тракт 7 км, 2<br/>+7 (999) 123-45-67</div>
                     </div>
                 </div>
                 <div className="social-media">
