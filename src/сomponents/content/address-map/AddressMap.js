@@ -5,10 +5,25 @@ import map from "./../../../img/vector/map.png"
 import map_body from "./../../../img/body-map.png"
 import plus from "../../../img/vector/plus.png";
 import minus from "../../../img/vector/minus.png";
+import {Map, Placemark, YMaps} from "react-yandex-maps";
+
+const mapData = {
+    center: [56.815690, 60.524639],
+    zoom: 17,
+    controls: ['zoomControl']
+};
+const optionData={
+    iconLayout: 'default#image',
+}
+const modules = [
+    ['control.ZoomControl']
+]
+const coordinates = [
+    [56.815690, 60.524639]
+];
+
 
 function AddressMap() {
-
-
     return (
         <div className="address-map">
             <div className="body-address-map">
@@ -17,7 +32,7 @@ function AddressMap() {
                     <div className="footer-one-block-address-map">
                         <p>Екатеринбург, Московский тракт 7 км, 2
                             Телефон: +7 (999) 123-45-67</p>
-                        <p>Cервис: <span>service@example.ru</span><br></br>
+                        <p>Cервис: <span>service@example.ru</span><br/>
                             Отдел запасных частей: <span>parts@example.ru</span></p>
                         <div className="button-footer-one-block-address-map">
                             <p>Построить маршрут</p>
@@ -26,7 +41,15 @@ function AddressMap() {
                     </div>
                 </div>
                 <div className="two-block-address-map">
-                    <img className="img-two-block-address-map" src={map_body} alt=""/>
+
+                    <div className="ymap-two-block-address-map">
+                        <YMaps>
+                            <Map width='100%' height='600px' defaultState={mapData} modules={modules}>
+                                {coordinates.map(coordinates => <Placemark geometry={coordinates} options={optionData}/>)}
+                            </Map>
+                        </YMaps>
+                    </div>
+
                     <div className="button-two-block-address-map">
                         <img src={map} alt=""/>
                     </div>

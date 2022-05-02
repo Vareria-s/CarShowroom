@@ -552,6 +552,9 @@
     width: 14px;
     margin: 20px 13px;
 }
+.ymap-two-block-address-map {
+    filter: grayscale(100%);
+}
 
 /*content * application*/
 .body-application {
