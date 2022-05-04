@@ -47,7 +47,6 @@ function App() {
                     </div>
                     <Content/>
                     <Footer/>
-                    <Carousel/>
                 </div>
             </BrowserRouter>
         </MyContext.Provider>

@@ -1,5 +1,5 @@
 import './../../style/Content.css';
-import Introduction from "./introduction/Introduction";
+import Introduction from "./introductionnew/Introduction";
 import Acquaintance from "./acquaintance/Acquaintance";
 import Services from "./services/Services";
 import Comfort from "./comfort/Comfort";

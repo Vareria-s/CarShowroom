@@ -60,41 +60,7 @@
 .entry-carousel {
     width: 100%;
 }
-.img-entry-carousel {
-    display: flex;
-    background: url("./../img/Image.png") rgba(0, 0, 0, 0.2);
-    width: 780px;
-    height: 650px;
-}
-.button-entry-carousel{
-    padding: 531px 0 59px 40px;
-    display: flex;
-}
-.button-entry-carousel img{
-    width: 14px;
-    height: 12px;
-    margin: 24px 23px;
-}
-.back-button-entry-carousel {
-    background: #FEC110;
-    height: 60px;
-    width: 60px;
-    border-radius: 30px;
-}
-.forward-button-entry-carousel {
-    margin-left: 5px;
-    background: #FEC110;
-    height: 60px;
-    width: 60px;
-    border-radius: 30px;
-}
-.image-pagination-entry-carousel {
-    font-size: 38px;
-    line-height: 110%;
-    letter-spacing: -0.015em;
-    color: #FFFFFF;
-    margin: 540px 130px 68px 432px;
-}
+
 
 /*content * acquaintance*/
 
@@ -325,26 +291,6 @@
     height: 12px;
     padding: 14px 16px 14px 18px;
 }
-.back-and-forward {
-    display: flex;
-    margin-top: 152px;
-}
-.back-button-stock {
-    width: 60px;
-    height: 60px;
-    border: 1px solid #313232;
-    border-radius: 40px;
-}
-.forward-button-stock {
-    margin-left: 5px;
-    width: 60px;
-    height: 60px;
-    border: 1px solid #313232;
-    border-radius: 40px;
-}
-.back-and-forward img {
-    margin: 24px;
-}
 
 /*content * reviews*/
 
@@ -380,11 +326,12 @@
     color: #989898;
 }
 .two-bloke-reviews {
+    padding-left: 460px;
     margin-top: 60px;
     border-top: 1px solid #B6B6B6;
 }
 .header-bloke-reviews {
-    margin: 40px 0 0 460px;
+    margin: 40px 0 0 0;
 }
 .personality-reviews {
     display: flex;
@@ -420,34 +367,14 @@
 .evaluation-scale img {
     margin-right: 5px;
 }
-.back-and-forward-reviews {
-    display: flex;
-    margin-left: 573px;
-}
-.back-button-reviews {
-    width: 58px;
-    height: 58px;
-    border: 1px solid #FFFFFF;
-    border-radius: 40px;
-}
-.forward-button-reviews {
-    margin-left: 5px;
-    width: 60px;
-    height: 60px;
-    border: 1px solid #FFFFFF;
-    border-radius: 40px;
-}
-.back-and-forward-reviews img{
-    margin: 24px 23px;
-}
 .text-personality-reviews {
-    margin: 40px 0 0 460px;
+    margin: 40px 0 0 0;
     width: 880px;
 }
 .text-personality-reviews p{
     font-size: 28px;
     line-height: 120%;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.03em;
     color: #FFFFFF;
 }
 

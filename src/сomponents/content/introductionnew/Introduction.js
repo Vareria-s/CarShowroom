@@ -1,7 +1,9 @@
 import '../../../style/Content.css';
 import information from "../../../img/vector/vector-information.png"
-import back from "../../../img/vector/back-button.png"
-import forward from "../../../img/vector/forward-button.png"
+import CarouselCompound from './carousel-compound/index-compound'
+import Images from './../../../img/Image.png'
+import Images1 from './../../../img/Images-1.png'
+import Images2 from './../../../img/Image-2.png'
 
 function Introduction() {
 
@@ -24,19 +26,26 @@ function Introduction() {
                 </div>
             </div>
             <div className="entry-carousel">
-                <div className="img-entry-carousel">
-                    <div className="button-entry-carousel">
-                        <div className="back-button-entry-carousel">
-                            <img src={back} alt=""/>
-                        </div>
-                        <div className="forward-button-entry-carousel">
-                            <img src={forward} alt=""/>
-                        </div>
-                    </div>
-                    <div className="image-pagination-entry-carousel">
-                        1/3
-                    </div>
-                </div>
+                <CarouselCompound infinite>
+                    <CarouselCompound.Page>
+                        <img src={Images} alt=""/>
+                            <div className="image-pagination-entry-carousel">
+                                1/3
+                            </div>
+                    </CarouselCompound.Page>
+                    <CarouselCompound.Page>
+                        <img src={Images1} alt=""/>
+                            <div className="image-pagination-entry-carousel">
+                                2/3
+                            </div>
+                    </CarouselCompound.Page>
+                    <CarouselCompound.Page>
+                        <img src={Images2} alt=""/>
+                            <div className="image-pagination-entry-carousel">
+                                3/3
+                            </div>
+                    </CarouselCompound.Page>
+                </CarouselCompound>
             </div>
         </div>
     );
