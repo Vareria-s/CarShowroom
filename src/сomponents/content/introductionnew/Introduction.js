@@ -11,7 +11,7 @@ function Introduction() {
         <div className="introduction">
             <div className="entry-information">
                 <div className="header-entry-information">Специализированный Автосервис</div>
-                <div className="phone-entry-information">+7 (999) 123-45-67</div>
+                <div className="phone-entry-information"><a href="tel:+79991234567">+7 (999) 123-45-67</a></div>
                 <div className="address-entry-information">
                     <h3>Работаем для вас: </h3>
                     <p>Ежедневно с 9:00 до 21:00</p>
@@ -20,10 +20,12 @@ function Introduction() {
                     <h3>По адресу: </h3>
                     <p>Екатеринбург, ул. Московский тракт 7 км, 2</p>
                 </div>
-                <div className="button-information">
-                    <p>Смотреть услуги</p>
-                    <img src={information} alt=""/>
-                </div>
+                <a className="new-button-information" href="#services">
+                    <div className="button-information btn-1">
+                        <p>Смотреть услуги</p>
+                        <img src={information} alt=""/>
+                    </div>
+                </a>
             </div>
             <div className="entry-carousel">
                 <CarouselCompound infinite>

@@ -18,13 +18,14 @@
     margin: 0 0 0 130px;
 }
 .phone-entry-information {
-    line-height: 95%;
-    /* identical to box height, or 64px */
-
     letter-spacing: -0.03em;
     color: #FEC110;
     font-size: 67px;
     margin: 40px 0 50px 130px;
+}
+.phone-entry-information a{
+    text-decoration: none;
+    color: #FEC110;
 }
 .address-entry-information {
     line-height: 140%;
@@ -39,13 +40,10 @@
     color: white;
     margin: 0;
 }
-.button-information {
-    display: flex;
-    margin: 60px 0 0 130px;
-    width: 223px;
+
+a.new-button-information{
+    text-decoration: none;
     color: #2C2C2C;
-    border-radius: 7px;
-    background: #FEC110;
 }
 .button-information p{
     line-height: 125%;
@@ -125,16 +123,15 @@
     width: 650px;
     height: 490px;
     margin: 0 40px 40px 0;
+    position: relative;
 }
-.img-card-services {
+.card-services a{
+    text-decoration: none;
+    position: absolute;
+    top: 360px;
+    left: 0;
 }
-.footer-card-services {
-    justify-content: space-between;
-    display: flex;
-    width: 570px;
-    background: #FFFFFF;
-    padding: 40px;
-}
+
 .text-card-services {
     flex-direction: column;
     display: flex;
@@ -158,9 +155,14 @@
     width: 40px;
     height: 40px;
     border-radius: 30px;
+    transition: all 0.9s cubic-bezier(.075,.82,.165,1);
 }
-.button-card-services img{
+.button-card-services .img-button-card-services{
+    width: 8px;
+    height: 14px;
     margin: 14px 16px 14px 18px;
+    background: url("./../img/vector/card-services.png");
+    transition: all 0.9s cubic-bezier(.075,.82,.165,1);
 }
 
 /*content * comfort*/
@@ -225,14 +227,61 @@
 .body-partners {
     display: flex;
 }
-.body-partners img {
+/*content * stock анимация*/
+.marquee {
+    margin: 0 auto;
+    width: 1600px;
+    height: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+}
+.list-inline img{
     border-radius: 166px;
     border: 1px solid #FFFFFF;
     padding: 47px;
     margin-left: -40px;
 }
-.body-partners img:nth-child(1) {
-    margin-left: 0;
+.marquee:before, .marquee:after {
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 30px;
+    content: "";
+    z-index: 1;
+}
+.marquee:before {
+    left: 0;
+}
+.marquee:after {
+    right: 0;
+}
+.marquee__content {
+    width: 300%;
+    display: flex;
+    line-height: 30px;
+    animation: marquee 10s linear infinite forwards;
+}
+.marquee__content:hover {
+    animation-play-state: paused;
+}
+.list-inline {
+    display: flex;
+    justify-content: space-around;
+    width: 33.33%;
+    /* reset list */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-66.6%);
+    }
 }
 
 /*content * stock*/
@@ -274,12 +323,10 @@
     display: flex;
     margin-top: 40px;
 }
-.button-more {
-    width: 40px;
-    height: 40px;
-    border-radius: 30px;
-    background: #FEC110;
+.two-block-stock a {
+    text-decoration: none;
 }
+
 .body-more p {
     margin: auto 0 auto 10px;
     font-size: 15px;
@@ -326,7 +373,7 @@
     color: #989898;
 }
 .two-bloke-reviews {
-    padding-left: 460px;
+    padding-left: 456px;
     margin-top: 60px;
     border-top: 1px solid #B6B6B6;
 }
@@ -404,19 +451,20 @@
     color: #FFFFFF;
     margin-bottom: 15px;
 }
+.footer-one-block-address-map a{
+    text-decoration: none;
+}
+.footer-one-block-address-map p a{
+    color: #FFFFFF;
+}
+.footer-one-block-address-map p span a{
+    color: #FEC110;
+}
 .footer-one-block-address-map p span{
     font-size: 16px;
     line-height: 140%;
-    color: #FEC110;;
 }
-.button-footer-one-block-address-map {
-    display: flex;
-    height: 60px;
-    width: 256px;
-    margin: 40px 0 0 0;
-    background: #FEC110;
-    border-radius: 7px;
-}
+
 .button-footer-one-block-address-map p{
     margin: 0;
     font-size: 16px;
@@ -479,8 +527,17 @@
     width: 14px;
     margin: 20px 13px;
 }
-.ymap-two-block-address-map {
+.ymaps-2-1-79-ground-pane {
     filter: grayscale(100%);
+}
+.ymaps-2-1-79-map-copyrights-promo {
+    display: none;
+}
+.ymaps-2-1-79-copyrights-pane {
+    display: none;
+}
+.ymaps-2-1-79-zoom__scale {
+    display: none;
 }
 
 /*content * application*/

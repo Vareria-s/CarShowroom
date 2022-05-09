@@ -2,10 +2,8 @@ import { useEffect, useRef, useState, Children, cloneElement } from 'react'
 import Page from './Page-stock/index-reviews'
 import { CarouselContext } from './carousel-context-reviews'
 import './Carousel-reviews.css'
-import back from "../../../../img/vector/white-back.png";
-import forward from "../../../../img/vector/white-forward.png";
 
-const TRANSITION_DURATION = 400
+const TRANSITION_DURATION = 300
 
 export const CarouselCompound = ({ children, infinite }) => {
     const [offset, setOffset] = useState(0)
@@ -91,8 +89,9 @@ export const CarouselCompound = ({ children, infinite }) => {
     return (
         <CarouselContext.Provider value={{ width }}>
             <div className="main-container-reviews">
-                <div className="back-button-reviews" onClick={handleLeftArrowClick} >
-                    <img src={back} alt=""/>
+                <div className="back-button-reviews btn-8" onClick={handleLeftArrowClick} >
+                    <div className="img-back-button-reviews">
+                    </div>
                 </div>
                 <div className="window-reviews" ref={windowElRef}>
                     <div
@@ -105,8 +104,9 @@ export const CarouselCompound = ({ children, infinite }) => {
                         {pages}
                     </div>
                 </div>
-                <div className="forward-button-reviews" onClick={handleRightArrowClick} >
-                    <img src={forward} alt=""/>
+                <div className="forward-button-reviews btn-9" onClick={handleRightArrowClick} >
+                    <div className="img-forward-button-reviews">
+                    </div>
                 </div>
             </div>
         </CarouselContext.Provider>

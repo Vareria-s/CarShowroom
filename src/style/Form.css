@@ -1,4 +1,12 @@
 /*order form call*/
+.bt-form {
+    opacity: 50%;
+    position: absolute;
+    background: #000;
+    width: 1600px;
+    height: 100%;
+    z-index: 1;
+}
 .form-call {
     display: none;
 }
@@ -7,10 +15,10 @@
 }
 .order-form-call {
     width: 740px;
-    position: absolute;
+    position: fixed;
     right: 0;
     background: white;
-    padding: 100px 0 0 60px;
+    padding: 100px 0 219px 60px;
     z-index: 2;
 }
 .order-form-call .header-form-order-call {
@@ -23,16 +31,41 @@
     display: flex;
     flex-direction: column;
 }
-.order-form-call input,textarea {
-    border: 1px solid;
+.order-form-call textarea {
+    border: 1px solid #989898;
     font-size: 16px;
-    width: 618px;
+    width: 620px;
     padding: 29px;
     border-radius: 7px;
     margin: 20px 0;
     outline:none;
 }
-.order-form-call label{
+.form-control-one {
+    border: 1px solid #989898;
+    font-size: 16px;
+    width: 620px;
+    padding: 29px;
+    border-radius: 7px;
+    margin: 20px 0;
+    outline:none;
+}
+.form-control-two {
+    border: 1px solid #989898;
+    font-size: 16px;
+    width: 620px;
+    padding: 29px;
+    border-radius: 7px;
+    margin: 20px 0;
+    outline:none;
+}
+.form-label-two{
+    position: absolute;
+    top: 48px;
+    left: 32px;
+    font-size: 16px;
+    color: #2C2C2C;
+}
+.form-label-one {
     position: absolute;
     top: 48px;
     left: 32px;
@@ -40,8 +73,7 @@
     color: #2C2C2C;
 }
 
-
-.placeholder:nth-child(2){
+.placeholder:nth-child(3){
     position:absolute;
     font-size: 16px;
     left:31px;
@@ -49,7 +81,7 @@
     transform:translateY(-50%);
     pointer-events:none;
 }
-.placeholder:nth-child(4){
+.placeholder:nth-child(6){
     position:absolute;
     font-size: 16px;
     left:31px;
@@ -57,16 +89,33 @@
     transform:translateY(-50%);
     pointer-events:none;
 }
-.red {
-    color:red;
+.placeholder:nth-child(8){
+    position:absolute;
+    font-size: 16px;
+    left:31px;
+    top:299px;
+    transform:translateY(-50%);
+    pointer-events:none;
 }
-.form-control-one:focus ~ .placeholder:nth-child(2),
-.form-control-one:valid ~ .placeholder:nth-child(2) {
+.group span {
+    color: #f50000;
+}
+.form-control-one:focus ~ .placeholder:nth-child(3),
+.form-control-one:valid ~ .placeholder:nth-child(3) {
     display:none;
 }
-.form-control-two:focus ~ .placeholder:nth-child(4),
-.form-control-two:valid ~ .placeholder:nth-child(4) {
+.form-control-two:focus ~ .placeholder:nth-child(6),
+.form-control-two:valid ~ .placeholder:nth-child(6) {
     display:none;
+}
+
+.form-control-three:focus+.placeholder:nth-child(8),
+.form-control-three:valid+.placeholder:nth-child(8),
+.form-control-three:focus-within+.placeholder:nth-child(8){
+    font-size: 12px;
+    line-height: 120%;
+    color: #989898;
+    top: 282px;
 }
 .order-form-call textarea {
     resize: none;
@@ -78,35 +127,28 @@
 }
 .order-form-call .submit-form {
     display: flex;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 .order-form-call .submit-form .data-processing{
     width: 350px;
     font-size: 14px;
     color: #989898;
-    margin: auto 0;
+    margin: 20px 0 0 0;
 }
 .order-form-call .submit-form .data-processing span{
     color: #2C2C2C;
 }
-.order-form-call .submit-form button {
-    border:none;
-    margin: 0 0 20px 20px;
-    padding: 30px 0 30px 0;
-    background: #FEC110;
-    width: 310px;
-    font-size: 16px;
-    border-radius: 7px;
-}
-.order-form-call .submit-form button img{
-    margin-left: 18px;
-    height: 9px;
-    width: 6px;
+
+.img-button-submit-form{
+    background: url("https://i.ibb.co/345JH3r/card-services.png");
+    margin: 2px 0 0 18px;
+    height: 13px;
+    width: 7px;
     background-size: cover;
 }
 .button-order-form-call {
     right: 800px;
-    position: absolute;
+    position: fixed;
     width: 100px;
     height: 100px;
     background: #FEC110;
@@ -135,4 +177,110 @@
 }
 .close:after {
     transform: rotate(-45deg);
+}
+
+
+
+/* form new ------------------------------- */
+.group label:nth-child(4) {
+    opacity: 0;
+}
+
+.group input:focus ~ label:nth-child(4),
+.group input:valid ~ label:nth-child(4) {
+    opacity: 100%;
+    position: absolute;
+    left: 0;
+    top: 80px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #D9534F;
+    transition: 0.2s ease-out all;
+    -moz-transition: 0.2s ease-out all;
+    -webkit-transition: 0.2s ease-out all;
+}
+
+
+/* form starting stylings ------------------------------- */
+.group {
+    margin: 40px 0;
+    width: 680px;
+    border: 1px solid #989898;
+    position: relative;
+    border-radius: 7px;
+}
+
+.group input {
+        border-radius: 7px;
+        padding: 29px;
+        font-size: 16px;
+        display: block;
+        background: white;
+        width: 621px;
+        border: none;
+}
+.group input{
+    -webkit-box-shadow: inset 0 0 0 50px #fff;
+    -webkit-text-fill-color: #000;
+}
+.group input:focus {
+    outline: none;
+}
+/* LABEL ======================================= */
+.group label {
+    font-size: 16px;
+    line-height: 140%;
+    color: #2C2C2C;
+    position: absolute;
+    pointer-events: none;
+    left: 29px;
+    top: 29px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+/* active state */
+.group input:focus, input:valid{
+    padding: 39px 30px 19px 30px;
+}
+.group input:focus ~ label:nth-child(3) span,
+input:valid ~ label:nth-child(3) span {
+    color: #989898;
+}
+.group input:focus ~ label:nth-child(3),
+input:valid ~ label:nth-child(3) {
+    font-size: 12px;
+    line-height: 120%;
+    color: #989898;
+    top: 10px;
+}
+
+/* BOTTOM BARS ================================= */
+.bar {
+    position: relative;
+    display: block;
+    width: 320px;
+}
+.bar:before, .bar:after {
+    content: "";
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    position: absolute;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+.bar:before {
+    left: 50%;
+}
+.bar:after {
+    right: 50%;
+}
+
+/* active state */
+.group input:focus ~ .bar:before,
+.group input:focus ~ .bar:after {
+    width: 50%;
 }

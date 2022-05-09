@@ -19,12 +19,16 @@ function MobileApp() {
                         <li><img src={check} alt=""/>Получать постоянные акции и бонусы</li>
                     </ul>
                 </div>
-                <div className="button-app-store">
-                    <img src={app} alt=""/>
-                </div>
-                <div className="button-google-play">
-                    <img src={google} alt=""/>
-                </div>
+                <a href="https://www.apple.com/app-store/">
+                    <div className="button-app-store">
+                        <img src={app} alt=""/>
+                    </div>
+                </a>
+                <a href="https://play.google.com/store">
+                    <div className="button-google-play">
+                        <img src={google} alt=""/>
+                    </div>
+                </a>
             </div>
         </div>
     );

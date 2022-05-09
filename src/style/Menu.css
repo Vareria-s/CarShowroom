@@ -32,10 +32,16 @@
 }
 .menu-blocks .nav .item {
     margin: 26px 20px;
+    font-size: 15px;
+    line-height: 18px;
+    color: #2C2C2C;
 }
 .menu-blocks .nav .item-active {
     display: flex;
     padding: 26px 20px;
+    font-size: 15px;
+    line-height: 18px;
+    color: #2C2C2C;
 }
 .menu-blocks .nav .item-active .arrow {
     background: url("../img/vector/arrow.png");
@@ -52,8 +58,10 @@
 }
 
 .dropdown-menu {
+    height: 185px;
+    z-index: 2;
     display: none;
-    padding: 40px 0 15px 629px;
+    padding: 40px 0 0 629px;
     top: 70px;
     width: 971px;
     left: 0;
@@ -65,7 +73,19 @@
     display: block;
 }
 .dropdown-menu li{
+    height: 25px;
     margin: 0 0 15px 0;
+    font-size: 21px;
+    line-height: 120%;
+    color: #2C2C2C;
+}
+.nav a {
+    text-decoration: none;
+    color: #2C2C2C;
+    display: flex;
+}
+.dropdown-menu a {
+    height: 40px;
 }
 /*burger-menu-icon*/
 .burger-menu-icon {
@@ -128,7 +148,10 @@
     border-radius: 7px;
     margin: 15px 0;
     padding: 12px 20px;
+    cursor: pointer;
 }
+
+
 .record-button-text {
     font-size: 13px;
     margin: auto;
@@ -138,15 +161,29 @@
 
 
 /*second application menu*/
+.bt-second-menu {
+    opacity: 50%;
+    position: absolute;
+    background: #000;
+    width: 1600px;
+    height: 7149px;
+    z-index: 1;
+    top: 613px;
+}
 .second-menu {
     padding: 40px 0 40px 0;
     display: none;
     border-top: 1px double #FEC110;
 }
 .closed-second-menu {
+    height: 538px;
+    position: absolute;
     padding: 40px 0 40px 0;
     display: flex;
     border-top: 1px double #FEC110;
+    z-index: 23;
+    background: white;
+    width: 1600px;
 }
 .first-block {
     margin-left: 130px;
@@ -154,15 +191,21 @@
 .contact-information {
     width: 680px;
 }
-.contact-information .telephone {
+.contact-information .telephone{
+    margin-bottom: 20px;
+}
+.contact-information .telephone a{
+    text-decoration: none;
     font-size: 38px;
     color: #FEC110;
+    margin-bottom: 20px;
 }
-.contact-information .e-mail {
+.contact-information .e-mail a{
     font-size: 21px;
     color: #2C2C2C;
-    text-decoration: underline;
     margin-top: 20px;
+    border-bottom: 2px solid #000000;
+    text-decoration: none;
 }
 .contact-information .opening-hours {
     font-size: 16px;
@@ -177,6 +220,10 @@
 }
 .addresses .body-addresses{
     margin-top: 10px;
+}
+.addresses .body-addresses a{
+    color: #989898;
+    text-decoration: none;
 }
 .addresses .body-addresses .header-addresses{
     font-size: 14px;
@@ -204,19 +251,21 @@
     border-bottom: 1px double #B6B6B6;
 }
 .auto-centers ul{
-    padding: 15px 0 17px 0;
+    height: 190px;
+    padding-top: 20px;
     margin: 0;
     color: #2C2C2C;
     font-size: 15px;
-    border-bottom: 1px double #B6B6B6;
+    border-bottom: 1px double #B6B6B6
 }
 .list-auto-centers .item{
     font-size: 15px;
     color: #2C2C2C;
-    margin: 5px;
+    height: 18px;
 }
 .personal-area {
-    margin-top: 20px;
+    height: 225px;
+    padding-top: 20px;
     font-size: 21px;
     color: #2C2C2C;
 }
@@ -224,7 +273,17 @@
     margin-left: 249px;
 }
 .confidentiality {
-    margin-top: 220px;
     font-size: 15px;
     color: #2C2C2C;
 }
+.closed-second-menu .second-block a {
+    text-decoration: none;
+    color: #2C2C2C;
+    height: 30px;
+}
+.list-auto-centers a {
+    display: flex;
+}
+
+
+

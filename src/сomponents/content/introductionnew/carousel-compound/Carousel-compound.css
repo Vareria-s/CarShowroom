@@ -20,40 +20,19 @@
     /* transition-duration: 400ms; */
     transition-timing-function: ease-in-out;
 }
-.back-button-entry-carousel {
-    top: 531px;
-    left: 40px;
-    background: #FEC110;
-    height: 60px;
-    width: 60px;
-    border-radius: 30px;
-    cursor: pointer;
-    position: absolute;
-    z-index: 1;
-}
+
 .back-button-entry-carousel img {
     width: 14px;
     height: 12px;
     margin: 24px 23px;
 }
-.forward-button-entry-carousel {
-    top: 531px;
-    left: 105px;
-    background: #FEC110;
-    height: 60px;
-    width: 60px;
-    border-radius: 30px;
-    cursor: pointer;
-    position: absolute;
-    z-index: 1;
-}
+
 .forward-button-entry-carousel img {
     width: 14px;
     height: 12px;
     margin: 24px 23px;
 }
 .image-pagination-entry-carousel {
-    margin: o;
     position: absolute;
     top: 540px;
     left: 597px;

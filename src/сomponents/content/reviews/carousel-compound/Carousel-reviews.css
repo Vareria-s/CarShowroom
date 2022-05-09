@@ -3,7 +3,7 @@
 .main-container-reviews {
     position: relative;
     height: 100%;
-    width: 1340px;
+    width: 880px;
     display: flex;
     align-items: center;
 }
@@ -31,10 +31,11 @@
     position: absolute;
     z-index: 1;
 }
-.back-button-reviews img {
-    width: 14px;
+.img-back-button-reviews {
+    width: 16px;
     height: 12px;
     margin: 24px 23px;
+    background: url("https://i.ibb.co/MMSQhTR/white-back.png");
 }
 .forward-button-reviews {
     top: 40px;
@@ -47,10 +48,11 @@
     position: absolute;
     z-index: 1;
 }
-.forward-button-reviews img {
-    width: 14px;
+.img-forward-button-reviews {
+    width: 16px;
     height: 12px;
     margin: 24px 23px;
+    background: url("https://i.ibb.co/r7kXwG8/white-forward.png");
 }
 
 

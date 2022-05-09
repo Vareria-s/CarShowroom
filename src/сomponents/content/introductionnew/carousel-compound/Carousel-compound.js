@@ -5,7 +5,7 @@ import './Carousel-compound.css'
 import back from "../../../../img/vector/back-button.png";
 import forward from "../../../../img/vector/forward-button.png";
 
-const TRANSITION_DURATION = 400
+const TRANSITION_DURATION = 300
 
 export const CarouselCompound = ({ children, infinite }) => {
   const [offset, setOffset] = useState(0)
@@ -91,7 +91,7 @@ export const CarouselCompound = ({ children, infinite }) => {
   return (
     <CarouselContext.Provider value={{ width }}>
       <div className="main-container-compound">
-        <div className="back-button-entry-carousel" onClick={handleLeftArrowClick} >
+        <div className="back-button-entry-carousel btn-2" onClick={handleLeftArrowClick} >
           <img src={back} alt=""/>
         </div>
         <div className="window-compound" ref={windowElRef}>
@@ -105,7 +105,7 @@ export const CarouselCompound = ({ children, infinite }) => {
             {pages}
           </div>
         </div>
-        <div className="forward-button-entry-carousel" onClick={handleRightArrowClick} >
+        <div className="forward-button-entry-carousel btn-3" onClick={handleRightArrowClick} >
           <img src={forward} alt=""/>
         </div>
       </div>

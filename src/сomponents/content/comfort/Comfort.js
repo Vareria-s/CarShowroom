@@ -4,7 +4,6 @@ import comfort1 from "./../../../img/vector/comfort/comfort1.png"
 import comfort2 from "./../../../img/vector/comfort/comfort2.png"
 import comfort3 from "./../../../img/vector/comfort/comfort3.png"
 
-
 function Comfort() {
 
     return (

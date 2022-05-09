@@ -1,0 +1,650 @@
+/*animation*/
+
+.nav a:hover .item {
+    border-bottom: 2px solid #FEC110;
+}
+.nav li:hover p{
+    border-bottom: 2px solid #FEC110;
+}
+.dropdown-menu li:hover {
+    border-bottom: 2px solid #FEC110;
+}
+.list-auto-centers a li:hover {
+    border-bottom: 2px solid #FEC110;
+}
+.personal-area a:hover {
+    border-bottom: 2px solid #FEC110;
+}
+.text-addresses a:hover {
+    border-bottom: 2px solid #FEC110;
+}
+.telephone a:hover {
+    border-bottom: 2px solid #FEC110;
+}
+.e-mail a:hover {
+    border-bottom: 2px solid #FEC110;
+}
+.confidentiality a:hover {
+    border-bottom: 2px solid #FEC110;
+}
+.menu-header-block-footer ul a li:hover {
+    border-bottom: 2px solid #FEC110;
+}
+.auto-centers-block-footer ul a li:hover {
+    border-bottom: 2px solid #FEC110;
+}
+.services-block-footer ul a li:hover {
+    border-bottom: 2px solid #FEC110;
+}
+.personal-area-block-footer:hover {
+    border-bottom: 2px solid #FEC110;
+}
+.address-auto-centers-block-footer p a:hover {
+    border-bottom: 2px solid #FEC110;
+}
+.address-services-block-footer p a:hover {
+    border-bottom: 2px solid #FEC110;
+}
+
+
+/*button square yellow down*/
+
+button {
+    outline: none;
+}
+.button-information{
+    margin: 60px 0 0 130px;
+    width: 223px;
+    display: flex;
+    border-radius: 7px;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(.075,.82,.165,1);
+    position: relative;
+    overflow: hidden;
+}
+/* 13 */
+.btn-1 {
+    background: #FEC110;
+    color: #2C2C2C;
+    z-index: 1;
+}
+.btn-1:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background: #fff;
+    transition: all 0.3s cubic-bezier(.075,.82,.165,1);
+}
+.btn-1:hover {
+    color: #000;
+}
+.btn-1:hover:after {
+    top: 0;
+    height: 100%;
+}
+.btn-1:active {
+    top: 2px;
+}
+
+/*button square yellow down*/
+.back-button-entry-carousel {
+    top: 531px;
+    left: 40px;
+    transition: all 0.3s cubic-bezier(.075,.82,.165,1);
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    background: transparent;
+    cursor: pointer;
+    position: absolute;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.btn-2 {
+    background: #FEC110;
+    z-index: 1;
+}
+.btn-2:after {
+    border-radius: 30px;
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    direction: rtl;
+    z-index: -1;
+    background: #fff;
+    transition: all 0.3s ease;
+}
+.btn-2:hover:after {
+    left: auto;
+    right: 0;
+    width: 100%;
+}
+.btn-2:active {
+    top: 531px;
+}
+/* right round yellow button */
+.forward-button-entry-carousel {
+    top: 531px;
+    left: 105px;
+    transition: all 0.3s cubic-bezier(.075,.82,.165,1);
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    background: transparent;
+    cursor: pointer;
+    position: absolute;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.btn-3 {
+    background: #FEC110;
+    color: #2C2C2C;;
+    z-index: 1;
+}
+.btn-3:after {
+    border-radius: 30px;
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background: #fff;
+    transition: all 0.3s cubic-bezier(.075,.82,.165,1);
+}
+.btn-3:hover:after {
+    left: 0;
+    width: 100%;
+}
+.btn-3:active {
+    top: 531px;
+}
+
+/* service service */
+.footer-card-services {
+    justify-content: space-between;
+    display: flex;
+    width: 570px;
+    padding: 40px;
+    transition: all 0.6s cubic-bezier(.075,.82,.165,1);
+    background: transparent;
+    cursor: pointer;
+    position: absolute;
+    overflow: hidden;
+}
+.btn-4 {
+    background: #FFF;
+    color: #2C2C2C;;
+    z-index: 1;
+}
+.btn-4:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background: #FEC110;
+    transition: all 0.6s cubic-bezier(.075,.82,.165,1);
+}
+.btn-4:hover p{
+    color: #fff;
+}
+.btn-4:hover:after {
+    left: 0;
+    width: 100%;
+}
+.btn-4:hover .button-card-services {
+    background: #313232;
+    transition: all 0.9s cubic-bezier(.075,.82,.165,1);
+}
+.btn-4:hover .img-button-card-services {
+    background: url("./../img/vector/w-card-services.png");
+    transition: all 0.9s cubic-bezier(.075,.82,.165,1);
+}
+
+/* body-more */
+.button-more {
+    transition: all 0.3s cubic-bezier(.075,.82,.165,1);
+    height: 40px;
+    width: 40px;
+    border-radius: 30px;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.btn-5 {
+    background: #FEC110;
+    color: #2C2C2C;;
+    z-index: 1;
+}
+.btn-5:after {
+    border-radius: 30px;
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background: #fff;
+    transition: all 0.3s cubic-bezier(.075,.82,.165,1);
+}
+.btn-5:hover:after {
+    left: 0;
+    width: 100%;
+}
+.btn-5:active {
+    top: 531px;
+}
+
+/**/
+.back-button-entry-carousel-stock {
+    top: 488px;
+    left: 920px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #313232;
+    border-radius: 40px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    transition: all 0.3s cubic-bezier(.075,.82,.165,1);
+    background: transparent;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.btn-6 {
+    border: 1px solid #313232;
+    z-index: 1;
+}
+.btn-6:after {
+    border-radius: 30px;
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    direction: rtl;
+    z-index: -1;
+    background: #313232;
+    transition: all 0.3s ease;
+}
+.btn-6:hover:after {
+    left: auto;
+    right: 0;
+    width: 100%;
+}
+.btn-6:active {
+    top: 488px;
+}
+.back-button-entry-carousel-stock:hover .img-back-button-entry-carousel-stock {
+    background: url("https://i.ibb.co/MMSQhTR/white-back.png");
+}
+
+
+/* */
+.forward-button-entry-carousel-stock {
+    top: 488px;
+    left: 985px;
+    width: 60px;
+    height: 60px;
+    background: none;
+    border-radius: 40px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    transition: all 0.3s cubic-bezier(.075,.82,.165,1);
+    background: transparent;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.btn-7 {
+    border: 1px solid #313232;
+    z-index: 1;
+}
+.btn-7:after {
+    border-radius: 30px;
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background: #313232;
+    transition: all 0.3s cubic-bezier(.075,.82,.165,1);
+}
+.btn-7:hover:after {
+    left: 0;
+    width: 100%;
+}
+.btn-7:active {
+    top: 488px;
+}
+
+.forward-button-entry-carousel-stock:hover .img-forward-button-entry-carousel-stock{
+    background: url("https://i.ibb.co/r7kXwG8/white-forward.png");
+}
+
+
+/* */
+.back-button-reviews {
+    top: 40px;
+    left: 755px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #FFFFFF;
+    border-radius: 40px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    transition: all 0.3s cubic-bezier(.075,.82,.165,1);
+    background: transparent;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.btn-8 {
+    border: 1px solid #fff;
+    z-index: 1;
+}
+.btn-8:after {
+    border-radius: 30px;
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    direction: rtl;
+    z-index: -1;
+    background: #fff;
+    transition: all 0.3s ease;
+}
+.btn-8:hover:after {
+    left: auto;
+    right: 0;
+    width: 100%;
+}
+.btn-8:active {
+    top: 40px;
+}
+.back-button-reviews:hover .img-back-button-reviews {
+    background: url("https://i.ibb.co/7jGwJMs/back-button.png");
+}
+
+
+/* */
+.forward-button-reviews {
+    top: 40px;
+    left: 820px;
+    width: 58px;
+    height: 58px;
+    border: 1px solid #FFFFFF;
+    border-radius: 40px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    background: none;
+    transition: all 0.3s cubic-bezier(.075,.82,.165,1);
+    background: transparent;
+    display: inline-block;
+    overflow: hidden;
+}
+.btn-9 {
+    border: 1px solid #fff;
+    z-index: 1;
+}
+.btn-9:after {
+    border-radius: 30px;
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background: #fff;
+    transition: all 0.3s cubic-bezier(.075,.82,.165,1);
+}
+.btn-9:hover:after {
+    left: 0;
+    width: 100%;
+}
+.btn-9:active {
+    top: 40px;
+}
+.forward-button-reviews:hover .img-forward-button-reviews{
+    background: url("https://i.ibb.co/MZ9zBzS/forward-button.png");
+}
+
+/* */
+.button-footer-one-block-address-map {
+    display: flex;
+    height: 60px;
+    width: 256px;
+    margin: 40px 0 0 0;
+    background: #FEC110;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    background: none;
+    transition: all 0.3s cubic-bezier(.075,.82,.165,1);
+    background: transparent;
+    overflow: hidden;
+}
+.btn-10 {
+    background: #FEC110;
+    color: #2C2C2C;;
+    z-index: 1;
+}
+.btn-10:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background: #fff;
+    transition: all 0.3s cubic-bezier(.075,.82,.165,1);
+}
+.btn-10:hover {
+    color: #2C2C2C;
+}
+.btn-10:hover:after {
+    left: 0;
+    width: 100%;
+}
+.btn-10:active {
+    top: 2px;
+}
+
+
+/* */
+.button-two-block-application {
+    width: 149px;
+    display: flex;
+    margin-top: 40px;
+    border-radius: 7px;
+    padding: 20px 40px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s cubic-bezier(.075,.82,.165,1);
+    background: transparent;
+    overflow: hidden;
+}
+.btn-11 {
+    background: #FEC110;
+    color: #2C2C2C;;
+    z-index: 1;
+}
+.btn-11:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background: #fff;
+    transition: all 0.3s cubic-bezier(.075,.82,.165,1);
+}
+.btn-11:hover {
+    color: #2C2C2C;
+}
+.btn-11:hover:after {
+    left: 0;
+    width: 100%;
+}
+.btn-11:active {
+    top: 2px;
+}
+
+/* */
+.button-back-call {
+    margin-bottom: 5px;
+    width: 130px;
+    border-radius: 7px;
+    padding: 15px 45px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s cubic-bezier(.075,.82,.165,1);
+    background: transparent;
+    overflow: hidden;
+}
+.btn-12 {
+    background: #FEC110;
+    color: #2C2C2C;;
+    z-index: 1;
+}
+.btn-12:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background: #fff;
+    transition: all 0.3s cubic-bezier(.075,.82,.165,1);
+}
+.btn-12:hover {
+    color: #2C2C2C;
+}
+.btn-12:hover:after {
+    left: 0;
+    width: 100%;
+}
+.btn-12:active {
+    top: 2px;
+}
+
+/* */
+.button-quality-control {
+    margin-bottom: 146px;
+    width: 177px;
+    border-radius: 7px;
+    padding: 15px 0 15px 41px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s cubic-bezier(.075,.82,.165,1);
+    background: transparent;
+    overflow: hidden;
+}
+
+.btn-13 {
+    border: 1px solid #FEC110;
+    color: #fff;
+    z-index: 1;
+}
+.btn-13:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background: #FEC110;
+    transition: all 0.3s cubic-bezier(.075,.82,.165,1);
+}
+.btn-13:hover p{
+    color: #2C2C2C;
+}
+.btn-13:hover:after {
+    left: 0;
+    width: 100%;
+}
+.btn-13:active {
+    top: 2px;
+}
+
+/* */
+.button-submit-form {
+    display: flex;
+    border:none;
+    margin-left: 20px;
+    padding: 30px 0 30px 75px;
+    width: 310px;
+    font-size: 16px;
+    border-radius: 7px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s cubic-bezier(.075,.82,.165,1);
+    background: transparent;
+    overflow: hidden;
+}
+
+.btn-14 {
+    background: #FEC110;
+    color: #2C2C2C;
+    z-index: 1;
+}
+.btn-14:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background: #313232;
+    transition: all 0.3s cubic-bezier(.075,.82,.165,1);
+}
+.btn-14:hover{
+    color: #fff;
+}
+.btn-14:hover:after {
+    left: 0;
+    width: 100%;
+}
+.btn-14:active {
+    top: 2px;
+}
+
+
+.button-submit-form:hover .img-button-submit-form {
+    background: url("https://i.ibb.co/nQSHgjm/w-card-services.png");
+}

@@ -1,12 +1,11 @@
 import React from 'react';
 import axios from 'axios';
 import "../../../style/Form.css"
-import "../../../style/Animation.css"
 import "../../../style/Select.css"
 import ButtonVector from "../../../img/vector/button-vector.png";
+import Select from "./Select";
 
-
-export default class SubmissionForm extends React.Component{
+export default class SubmissionFormApplication extends React.Component{
     state = {
         name: '',
         phone: '',
@@ -53,6 +52,9 @@ export default class SubmissionForm extends React.Component{
                             <label className="form-label-two" htmlFor="tel">Обязательное поле</label>
                         </div>
 
+                        <Select/>
+
+
                         <textarea placeholder="Комментарий" name="comment" cols="40" rows="5"/>
                     </div>
 
@@ -60,9 +62,7 @@ export default class SubmissionForm extends React.Component{
                         <div className="data-processing">Нажимая кнопку «Отправить заявку» вы даете согласие на
                             <span>Обработку персональных данных</span>
                         </div>
-                        <button className="button-submit-form btn-14" type="submit btn-14">Отправить заявку
-                            <div className="img-button-submit-form"></div>
-                        </button>
+                        <button type="submit">Отправить заявку <img src={ButtonVector} alt=""/></button>
                     </div>
                 </form>
             )

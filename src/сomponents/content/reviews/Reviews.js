@@ -36,14 +36,6 @@ function Content() {
                                         <img src={off} alt=""/>
                                     </div>
                                 </div>
-                                <div className="back-and-forward-reviews">
-                                    <div className="back-button-reviews">
-                                        <img src={back} alt=""/>
-                                    </div>
-                                    <div className="forward-button-reviews">
-                                        <img src={forward} alt=""/>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                         <div className="text-personality-reviews">
@@ -69,14 +61,6 @@ function Content() {
                                         <img src={on} alt=""/>
                                         <img src={on} alt=""/>
                                         <img src={on} alt=""/>
-                                    </div>
-                                </div>
-                                <div className="back-and-forward-reviews">
-                                    <div className="back-button-reviews">
-                                        <img src={back} alt=""/>
-                                    </div>
-                                    <div className="forward-button-reviews">
-                                        <img src={forward} alt=""/>
                                     </div>
                                 </div>
                             </div>

@@ -1,5 +1,4 @@
 
-
 .main-container-stock {
     position: relative;
     height: 550px;
@@ -17,41 +16,19 @@
     display: flex;
     transition: translate;
     transition-property: transform;
-    /* transition-duration: 400ms; */
     transition-timing-function: ease-in-out;
 }
-.back-button-entry-carousel-stock {
-    top: 488px;
-    left: 920px;
-    width: 60px;
-    height: 60px;
-    background: none;
-    border: 1px solid #313232;
-    border-radius: 40px;
-    cursor: pointer;
-    position: absolute;
-    z-index: 1;
-}
-.back-button-entry-carousel-stock img {
-    width: 14px;
-    height: 12px;
+.img-back-button-entry-carousel-stock {
+    background: url("https://i.ibb.co/7jGwJMs/back-button.png");
+    width: 16px;
+    height: 14px;
     margin: 24px 23px;
 }
-.forward-button-entry-carousel-stock {
-    top: 488px;
-    left: 985px;
-    width: 60px;
-    height: 60px;
-    background: none;
-    border: 1px solid #313232;
-    border-radius: 40px;
-    cursor: pointer;
-    position: absolute;
-    z-index: 1;
-}
-.forward-button-entry-carousel-stock img {
-    width: 14px;
-    height: 12px;
+
+.img-forward-button-entry-carousel-stock {
+    background: url("https://i.ibb.co/MZ9zBzS/forward-button.png");
+    width: 16px;
+    height: 14px;
     margin: 24px 23px;
 }
 

@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 .app-wrapper {
     position: relative;
     width: 1600px;
@@ -11,6 +14,9 @@ p,h1,h2,h3,h4 {
     margin: 0;
     font-weight: 400;
 }
+
+
+
 
 @media only screen and (min-width: 1600px) {
     .app-wrapper {

@@ -2,10 +2,8 @@ import { useEffect, useRef, useState, Children, cloneElement } from 'react'
 import Page from './Page-stock/index-stock'
 import { CarouselContext } from './carousel-context-stock'
 import './Carousel-stock.css'
-import back from "../../../../img/vector/back-button.png";
-import forward from "../../../../img/vector/forward-button.png";
 
-const TRANSITION_DURATION = 400
+const TRANSITION_DURATION = 300
 
 export const CarouselCompound = ({ children, infinite }) => {
     const [offset, setOffset] = useState(0)
@@ -91,8 +89,8 @@ export const CarouselCompound = ({ children, infinite }) => {
     return (
         <CarouselContext.Provider value={{ width }}>
             <div className="main-container-stock">
-                <div className="back-button-entry-carousel-stock" onClick={handleLeftArrowClick} >
-                    <img src={back} alt=""/>
+                <div className="back-button-entry-carousel-stock btn-6" onClick={handleLeftArrowClick} >
+                    <div className="img-back-button-entry-carousel-stock"></div>
                 </div>
                 <div className="window-stock" ref={windowElRef}>
                     <div
@@ -105,8 +103,8 @@ export const CarouselCompound = ({ children, infinite }) => {
                         {pages}
                     </div>
                 </div>
-                <div className="forward-button-entry-carousel-stock" onClick={handleRightArrowClick} >
-                    <img src={forward} alt=""/>
+                <div className="forward-button-entry-carousel-stock btn-7" onClick={handleRightArrowClick} >
+                    <div className="img-forward-button-entry-carousel-stock"></div>
                 </div>
             </div>
         </CarouselContext.Provider>
