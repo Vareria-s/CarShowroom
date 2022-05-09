@@ -1,43 +1,73 @@
-import './App.css';
-import FirstMenu from "./сomponents/first-menu/FirstMenu";
-import SecondMenu from "./сomponents/second-menu/SecondMenu";
-import ButtonVector from "./img/button-vector.png"
-import {BrowserRouter} from "react-router-dom";
+import './style/App.css';
+import './style/Animation.css'
+import FirstMenu from "./сomponents/menu/first-menu/FirstMenu";
+import SecondMenu from "./сomponents/menu/second-menu/SecondMenu";
+import Content from "./сomponents/content/Content";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import PersonList from "./сomponents/form-call/PersonList";
+import {createContext, useReducer} from "react";
+import Footer from "./сomponents/footer/Footer";
+import PersonListApplication from "./сomponents/form-application/PersonListApplication";
+import Services from "./сomponents/content/services/Services";
+
+
+
+export const MyContext= createContext();
+
+export const initialState= {
+    burgerMenuWork: false,
+    formCall: true,
+    formApplication: true
+}
+export const BURGER_MENU_WORK = 'BURGER_MENU_WORK';
+export const FORM_CALL = 'FORM_CALL';
+export const CLOSED_FORM_CALL = 'CLOSED_FORM_CALL';
+export const FORM_APPLICATION = 'FORM_APPLICATION';
+export const CLOSED_FORM_APPLICATION = 'CLOSED_FORM_APPLICATION';
+
 
 function App() {
+
+
+    const menuReducer = (state, action) => {
+        switch (action.type) {
+            case BURGER_MENU_WORK:
+                return {...state, burgerMenuWork: !state.burgerMenuWork};
+            case FORM_CALL:
+                return {...state, formCall: false};
+            case CLOSED_FORM_CALL:
+                return {...state, formCall: !state.formCall};
+            case FORM_APPLICATION:
+                return {...state, formApplication: false};
+            case CLOSED_FORM_APPLICATION:
+                return {...state, formApplication: !state.formApplication};
+            default:
+                return state;
+        }
+    }
+    const [state, dispatch] = useReducer(menuReducer, initialState);
+
     return (
+        <MyContext.Provider value={{state, dispatch}}>
             <BrowserRouter>
                 <div className="app-wrapper">
-                    <div className="order-form-call">
-                        <div className="header-form-order-call">Перезвоним в течении часа</div>
-                        <form name="test" method="post" action="">
-                            <input  className="form-control-one" name="user" required placeholder=""  maxlength="50">
-                            </input>
-                                <div className="placeholder">Ваше имя <span className="red">*</span></div>
-                            <input className="form-control-two" type="tel" required placeholder="">
-                            </input>
-                                <div className="placeholder">Контактный телефон <span className="red">*</span></div>
-                            <textarea placeholder="Комментарий" name="comment" maxlength="500" cols="40" rows="6">
-                            </textarea>
-                            <div className="submit-form">
-                                <div className="data-processing">Нажимая кнопку «Отправить заявку» вы даете согласие на <span>Обработку персональных данных</span></div>
-                                <button type="submit">Отправить заявку <img src={ButtonVector} alt=""/></button>
-                            </div>
-                        </form>
-                    </div>
+                    <PersonList/>
+                    <PersonListApplication/>
                     <div className="header">
                         <FirstMenu/>
-                        {/*<SecondMenu/>*/}
+                        <SecondMenu/>
                     </div>
-                    <div className="content">
-
-                    </div>
-                    <div className="footer">
-
-                    </div>
+                    <Routes>
+                        <Route path="/" element={<Content />}/>
+                        <Route path="/services" element={<Services />}/>
+                    </Routes>
+                    <Footer/>
                 </div>
             </BrowserRouter>
+        </MyContext.Provider>
     );
 }
 
 export default App;
+
+

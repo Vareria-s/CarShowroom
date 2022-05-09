@@ -1,0 +1,26 @@
+html {
+    scroll-behavior: smooth;
+}
+.app-wrapper {
+    position: relative;
+    width: 1600px;
+    font-weight: 400;
+}
+li, ul{
+    padding: 0;
+    list-style-type: none;
+}
+p,h1,h2,h3,h4 {
+    margin: 0;
+    font-weight: 400;
+}
+
+
+
+
+@media only screen and (min-width: 1600px) {
+    .app-wrapper {
+       max-width: 1600px;
+        margin: auto;
+    }
+}

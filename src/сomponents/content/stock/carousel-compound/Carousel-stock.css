@@ -1,0 +1,38 @@
+
+.main-container-stock {
+    position: relative;
+    height: 550px;
+    width: 1340px;
+    display: flex;
+    align-items: center;
+}
+.window-stock{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.all-pages-container-stock {
+    height: 100%;
+    display: flex;
+    transition: translate;
+    transition-property: transform;
+    transition-timing-function: ease-in-out;
+}
+.img-back-button-entry-carousel-stock {
+    background: url("https://i.ibb.co/7jGwJMs/back-button.png");
+    width: 16px;
+    height: 14px;
+    margin: 24px 23px;
+}
+
+.img-forward-button-entry-carousel-stock {
+    background: url("https://i.ibb.co/MZ9zBzS/forward-button.png");
+    width: 16px;
+    height: 14px;
+    margin: 24px 23px;
+}
+
+
+
+
+
