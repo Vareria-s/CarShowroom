@@ -62,7 +62,9 @@ export default class SubmissionFormApplication extends React.Component{
                         <div className="data-processing">Нажимая кнопку «Отправить заявку» вы даете согласие на
                             <span>Обработку персональных данных</span>
                         </div>
-                        <button type="submit">Отправить заявку <img src={ButtonVector} alt=""/></button>
+                        <button className="button-submit-form btn-14" type="submit btn-14">Отправить заявку
+                            <div className="img-button-submit-form"></div>
+                        </button>
                     </div>
                 </form>
             )
