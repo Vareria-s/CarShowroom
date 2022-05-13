@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/CarShowroom/static/css/main.e9a4bc34.css",
-    "main.js": "/CarShowroom/static/js/main.827cff42.js",
+    "main.js": "/CarShowroom/static/js/main.8a7454ba.js",
     "static/js/787.28cb0dcd.chunk.js": "/CarShowroom/static/js/787.28cb0dcd.chunk.js",
     "static/media/application.png": "/CarShowroom/static/media/application.44379edd35fa106ff282.png",
     "static/media/Images-1.png": "/CarShowroom/static/media/Images-1.7519c98b0441930881ce.png",
@@ -19,11 +19,11 @@
     "static/media/Mercedes.png": "/CarShowroom/static/media/Mercedes.c8f68758eb9cbb59a0da.png",
     "index.html": "/CarShowroom/index.html",
     "main.e9a4bc34.css.map": "/CarShowroom/static/css/main.e9a4bc34.css.map",
-    "main.827cff42.js.map": "/CarShowroom/static/js/main.827cff42.js.map",
+    "main.8a7454ba.js.map": "/CarShowroom/static/js/main.8a7454ba.js.map",
     "787.28cb0dcd.chunk.js.map": "/CarShowroom/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e9a4bc34.css",
-    "static/js/main.827cff42.js"
+    "static/js/main.8a7454ba.js"
   ]
 }
