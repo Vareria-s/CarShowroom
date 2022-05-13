@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://vareria-s.github.io/CarShowroom/",
+  "homepage": "https://vareria-s.github.io/CarShowroom",
   "dependencies": {
     "@teambit/community.entity.images": "^1.95.10",
     "@testing-library/jest-dom": "^5.16.4",
