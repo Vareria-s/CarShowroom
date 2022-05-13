@@ -59,6 +59,7 @@ function App() {
                     </div>
                     <Routes>
                         <Route path="/" element={<Content />}/>
+                        <Route path="/CarShowroom" element={<Content />}/>
                         <Route path="/services" element={<Services />}/>
                     </Routes>
                     <Footer/>
