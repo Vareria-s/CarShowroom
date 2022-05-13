@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/CarShowroom/static/css/main.e9a4bc34.css",
+    "main.js": "/CarShowroom/static/js/main.827cff42.js",
+    "static/js/787.28cb0dcd.chunk.js": "/CarShowroom/static/js/787.28cb0dcd.chunk.js",
+    "static/media/application.png": "/CarShowroom/static/media/application.44379edd35fa106ff282.png",
+    "static/media/Images-1.png": "/CarShowroom/static/media/Images-1.7519c98b0441930881ce.png",
+    "static/media/Image.png": "/CarShowroom/static/media/Image.5d4c38943c41b944cdf3.png",
+    "static/media/Image-2.png": "/CarShowroom/static/media/Image-2.0a83af66efdbf1c6a62c.png",
+    "static/media/image1.png": "/CarShowroom/static/media/image1.6a9ed9cf6e1a728a1cdc.png",
+    "static/media/Prew.png": "/CarShowroom/static/media/Prew.d121d79e86788410b436.png",
+    "static/media/image2.png": "/CarShowroom/static/media/image2.673a3a993275f18291dd.png",
+    "static/media/image3.png": "/CarShowroom/static/media/image3.fdd09bed7c6a7a95b207.png",
+    "static/media/image4.png": "/CarShowroom/static/media/image4.591638b2020950bf83e4.png",
+    "static/media/Prew1.png": "/CarShowroom/static/media/Prew1.d23ff5a7fee9e503331e.png",
+    "static/media/iphone.png": "/CarShowroom/static/media/iphone.12692801db1fb46b455e.png",
+    "static/media/Land-Rover.png": "/CarShowroom/static/media/Land-Rover.7f9b93073f44a442d9ef.png",
+    "static/media/Audi.png": "/CarShowroom/static/media/Audi.c1b6fe797f90d8c56f1c.png",
+    "static/media/Mercedes.png": "/CarShowroom/static/media/Mercedes.c8f68758eb9cbb59a0da.png",
+    "index.html": "/CarShowroom/index.html",
+    "main.e9a4bc34.css.map": "/CarShowroom/static/css/main.e9a4bc34.css.map",
+    "main.827cff42.js.map": "/CarShowroom/static/js/main.827cff42.js.map",
+    "787.28cb0dcd.chunk.js.map": "/CarShowroom/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e9a4bc34.css",
+    "static/js/main.827cff42.js"
+  ]
+}
